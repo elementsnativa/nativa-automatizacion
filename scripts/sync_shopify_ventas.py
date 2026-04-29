@@ -22,7 +22,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DIRECTORIO = Path(__file__).parent
+DIRECTORIO = Path(__file__).parent.parent
 EXCEL      = DIRECTORIO / "GESTION FINAN PY.xlsx"
 
 MESES_ES = {

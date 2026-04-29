@@ -17,7 +17,7 @@ from openpyxl.utils import get_column_letter
 
 load_dotenv()
 
-DIRECTORIO  = Path(__file__).parent
+DIRECTORIO  = Path(__file__).parent.parent
 EXCEL       = DIRECTORIO / os.getenv("EXCEL_FILE", "GESTION FINAN PY.xlsx")
 
 # Fila y columna de "Existencias" en BALANCE / BALANCE ESTIMADO

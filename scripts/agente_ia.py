@@ -19,7 +19,7 @@ import anthropic
 
 load_dotenv()
 
-EXCEL      = Path(__file__).parent / os.getenv("EXCEL_FILE", "GESTION FINAN PY.xlsx")
+EXCEL      = Path(__file__).parent.parent / os.getenv("EXCEL_FILE", "GESTION FINAN PY.xlsx")
 MES_ACTUAL = datetime.now().month
 AÑO_ACTUAL = datetime.now().year
 MESES_ES   = {

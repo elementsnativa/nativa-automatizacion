@@ -31,9 +31,10 @@ if not RUT or not CLAVE:
     sys.exit(1)
 
 # ── Configuración ──────────────────────────────────────────────────────────────
-DIRECTORIO_TRABAJO = Path(__file__).parent
+DIRECTORIO_TRABAJO = Path(__file__).parent.parent
+SCRIPTS_DIR        = Path(__file__).parent
 EXCEL_GESTION      = DIRECTORIO_TRABAJO / "GESTION FINAN PY.xlsx"
-CARPETA_CARTOLAS   = DIRECTORIO_TRABAJO  # las cartolas se guardan aquí
+CARPETA_CARTOLAS   = DIRECTORIO_TRABAJO / "archivos"
 
 URL_PORTAL = (
     "https://portalempresas.bancochile.cl/mibancochile-web/front/empresa/"
@@ -242,7 +243,7 @@ def procesar_cartola(archivo_xls: Path):
     print(f"  PROCESANDO CARTOLA → EXCEL")
     print(f"{'='*60}")
 
-    script = DIRECTORIO_TRABAJO / "automatizacion cartolas.py"
+    script = SCRIPTS_DIR / "automatizacion cartolas.py"
     spec = importlib.util.spec_from_file_location("automatizacion_cartolas", script)
     mod  = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)

@@ -38,7 +38,7 @@ from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 from dotenv import load_dotenv
 
-DIRECTORIO = Path(__file__).parent
+DIRECTORIO = Path(__file__).parent.parent
 load_dotenv(DIRECTORIO / '.env')
 
 EXCEL_FILE    = DIRECTORIO / os.getenv('EXCEL_FILE', 'GESTION FINAN PY.xlsx')

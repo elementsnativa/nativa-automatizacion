@@ -31,7 +31,7 @@ from openpyxl.utils import get_column_letter
 
 load_dotenv()
 
-DIRECTORIO = Path(__file__).parent
+DIRECTORIO = Path(__file__).parent.parent
 
 MESES_ES = {
     "01": "Ene", "02": "Feb", "03": "Mar", "04": "Abr",

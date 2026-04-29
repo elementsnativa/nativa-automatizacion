@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DIRECTORIO = Path(__file__).parent
+DIRECTORIO = Path(__file__).parent.parent
 LOG_DIR    = DIRECTORIO / "logs"
 LOG_DIR.mkdir(exist_ok=True)
 LOG_FILE   = LOG_DIR / f"sync_diario_{datetime.now().strftime('%Y%m')}.log"
