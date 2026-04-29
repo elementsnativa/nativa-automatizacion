@@ -1,0 +1,35 @@
+{
+  "fcl": {
+    "VENTA": "VENTA",
+    "TRASPASO DE: NATIVA ELEMENTS SPA": "VENTA",
+    "TRASPASO DE: VENTI PAY SPA": "VENTA",
+    "FACEBOOK": "MARKETING",
+    "FACEBK": "MARKETING",
+    "GOOGLE ADS": "MARKETING",
+    "MARKETING": "MARKETING",
+    "CHATGPT": "SOFTWARE",
+    "SOFTWARE": "SOFTWARE",
+    "PROVEEDORES": "Proveedores",
+    "PAGO:": "Proveedores",
+    "APP-TRASPASO A:": "Proveedores",
+    "COMISION": "OPERACIONAL",
+    "COMISION COMPRA INTERNACIONAL": "OPERACIONAL",
+    "COMISION MENSUAL POR MANTENCION": "OPERACIONAL",
+    "PAGO: FACEBK": "MARKETING",
+    "APP-TRASPASO A: STOCKA SPA": "Proveedores"
+  },
+  "eerr": {
+    "VENTA": "Ingresos por ventas",
+    "TRASPASO DE: NATIVA ELEMENTS SPA": "Ingresos por ventas",
+    "TRASPASO DE: VENTI PAY SPA": "Ingresos por ventas",
+    "FACEBOOK": "Marketing",
+    "FACEBK": "Marketing",
+    "GOOGLE ADS": "Marketing",
+    "MARKETING": "Marketing",
+    "CHATGPT": "software",
+    "SOFTWARE": "software",
+    "COMISION": "OPERACIONAL",
+    "COMISION COMPRA INTERNACIONAL": "OPERACIONAL",
+    "COMISION MENSUAL POR MANTENCION": "OPERACIONAL"
+  }
+}

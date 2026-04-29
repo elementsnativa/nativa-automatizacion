@@ -1,0 +1,33 @@
+# Excel y backups
+*.xlsx
+*.xls
+~$*
+
+# Credenciales - NUNCA subir
+.env
+
+# Logs
+logs/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyc.*
+
+# Imágenes de debug
+*.png
+*.jpg
+
+# CSVs temporales
+*.csv
+
+# PDFs
+*.pdf
+
+# macOS
+.DS_Store
+
+# Claude Code local settings (permisos personales)
+settings.local.json
