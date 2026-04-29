@@ -175,6 +175,19 @@ def main():
         log("SYNC COMPLETADO EXITOSAMENTE")
     log("=" * 60 + "\n")
 
+    # ── Backup automático a GitHub ────────────────────────────────────
+    import subprocess
+    try:
+        directorio = str(DIRECTORIO)
+        subprocess.run(['git', '-C', directorio, 'add', '-A'], check=True, capture_output=True)
+        subprocess.run(['git', '-C', directorio, 'commit', '-m',
+                        f'sync: {hoy.strftime("%Y-%m-%d")}'],
+                       check=True, capture_output=True)
+        subprocess.run(['git', '-C', directorio, 'push'], check=True, capture_output=True)
+        log("  ✓ Código respaldado en GitHub")
+    except subprocess.CalledProcessError:
+        log("  [INFO] GitHub: sin cambios nuevos en el código")
+
 
 if __name__ == "__main__":
     main()
